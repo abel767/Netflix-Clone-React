@@ -1,0 +1,88 @@
+body{
+    overflow-x: hidden;
+}
+
+.titlecards{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+.titleCards h2{
+    margin-bottom: 8px;
+}
+
+.card-list{
+    display: flex;
+    overflow-x: scroll; 
+    scroll-behavior: smooth;
+    gap: 10px;
+    max-width: 2050px;
+    padding-left: 250px;
+}
+
+.card-list::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+  }
+
+.card-list img{
+    width: 280px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card-list .card{
+position: relative;
+}
+
+.card-list{
+    position: relative;
+    right: 250px;
+}
+
+.titleCards {
+  position: relative;
+  
+}
+  
+.scroll-buttons {
+   margin-bottom: 10px;
+}
+
+.scroll-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 44px;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-button.left{
+    left: -115px;
+}
+
+.scroll-button.right{
+    right: 12.8%;
+}
+
+.scroll-button.left, .scroll-button.right {
+    display: none; 
+}
+
+.titleCards:hover .scroll-button.left,
+.titleCards:hover .scroll-button.right {
+    display: flex; 
+}

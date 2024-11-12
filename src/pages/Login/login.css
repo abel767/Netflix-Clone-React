@@ -1,0 +1,171 @@
+.login {
+    position: relative;
+    height: 100vh;
+    background: url('../../assets/background_banner.jpg') no-repeat center center / cover;
+    padding: 20px 8%;
+}
+
+.white-background {
+    background: white !important;
+    background-color: white;
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.login.white-background::before {
+    display: none; 
+}
+
+.loginForm.white-background input {
+    background: transparent; 
+    color: black;
+    border: 1px solid black; 
+}
+
+.loginForm.white-background input:focus {
+    border: 2px  solid #000;
+}
+
+.loginForm.white-background{
+    background: transparent;
+    color: black;
+}
+
+
+
+.loginLogo  {
+    position: relative;
+    width: 150px;
+    z-index: 2;
+}
+
+.loginForm {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 60px;
+    margin: auto;
+}
+
+.loginForm h1{
+    font-size: 32px;
+    font-weight: 500px;
+    margin-bottom: 28px;
+}
+
+.loginForm input{
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    background: rgba(51,51,51,0.7);
+    color: white;
+    margin: 12px 0;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 500px;
+}
+
+.loginForm input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.loginForm button{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 16px;
+    background: #e50914;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.formhelp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.remember{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.remember input{
+    width: 18px;
+    height: 18px;
+} 
+
+.p1{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    font-size: 16px;
+}
+
+.p2{
+    color: white;
+    padding-left:5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.p3{
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgb(197, 193, 193);
+}
+
+.p3 a{
+    color: rgb(0, 110, 255) !important;
+}
+
+.loginForm input:focus{
+    border: 2px solid white ;
+}
+
+.loginForm button:hover{
+    background: #b4050e;
+}
+
+p2.p2-signup {
+    color: #000 !important;
+}
+
+.darkP{
+    color: #000;
+}
